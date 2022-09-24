@@ -49,7 +49,6 @@ def Movimiento(grilla ,pos_x, pos_y, direccion, jugador_solo):
     elif direccion[0] == -1 and direccion[1] == 0:
          pos_x_1,pos_x_2,pos_y_1,pos_y_2 = pos_x,pos_x,pos_y-1,pos_y-2   
     
-
     elif direccion[0] == 1 and direccion[1] ==0:
          pos_x_1,pos_x_2,pos_y_1,pos_y_2 = pos_x,pos_x,pos_y+1,pos_y+2 
          
@@ -66,7 +65,6 @@ def Movimiento(grilla ,pos_x, pos_y, direccion, jugador_solo):
              grilla_2[pos_x_1][pos_y_1] = "+"   
              grilla_2[pos_x_2][pos_y_2] = "$"               
              return grilla_2            
-
 
             if  hay_objetivo(grilla_2,pos_y_2,pos_x_2):
               if jugador_solo:
@@ -135,4 +133,3 @@ def mover(grilla,direccion):
                 break
      nueva_grilla = Movimiento(grilla , pos_x , pos_y , direccion , jugador_solo)
      return nueva_grilla
-     
