@@ -52,7 +52,6 @@ def Movimiento(grilla ,pos_x, pos_y, direccion, jugador_solo):
     elif direccion[0] == 1 and direccion[1] ==0:
          pos_x_1,pos_x_2,pos_y_1,pos_y_2 = pos_x,pos_x,pos_y+1,pos_y+2 
          
-
     if hay_pared(grilla_2,pos_y_1,pos_x_1):
             return grilla_2 
 
@@ -133,3 +132,4 @@ def mover(grilla,direccion):
                 break
      nueva_grilla = Movimiento(grilla , pos_x , pos_y , direccion , jugador_solo)
      return nueva_grilla
+     
